@@ -9,6 +9,7 @@ In this sample code, we will be moving a box in video mode with keyboard input. 
 - How to use the screen buffer to draw in the screen
 - built a simple keyboard input handler
 - Looked at the ASSUME directive
-  '''Ass
-  ASSUME CS:CODE,DS:DATA  
-  '''
+
+  ```Asm
+  ASSUME CS:CODE,DS:DATA
+  ```
