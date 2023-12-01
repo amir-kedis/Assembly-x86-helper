@@ -37,4 +37,20 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 
 [<img src="https://github.com/amir-kedis.png" width="60px;"/><br /><sub><a href="https://github.com/amir-kedis">amir-kedis</a></sub>](https://github.com/amir-kedis/)
 
-[[TODO: ADD ALL OF US]]
+[<img src="https://github.com/marwan2232004.png" width="60px;"/><br /><sub><a href="https://github.com/marwan2232004">marwan2232004</a></sub>](https://github.com/marwan2232004/)
+
+[<img src="https://github.com/shehab299.png" width="60px;"/><br /><sub><a href="https://github.com/shehab299">shehab299</a></sub>](https://github.com/shehab299/)
+
+[<img src="https://github.com/Ahmed-Aladdiin.png" width="60px;"/><br /><sub><a href="https://github.com/Ahmed-Aladdiin">Ahmed-Aladdiin</a></sub>](https://github.com/Ahmed-Aladdiin/)
+
+[<img src="https://github.com/AbdelruhmanSamy.png" width="60px;"/><br /><sub><a href="https://github.com/AbdelruhmanSamy">AbdelruhmanSamy</a></sub>](https://github.com/AbdelruhmanSamy/)
+
+[<img src="https://github.com/Adham-hussin.png" width="60px;"/><br /><sub><a href="https://github.com/Adham-hussin">Adham-hussin</a></sub>](https://github.com/Adham-hussin/)
+
+[<img src="https://github.com/akramhany.png" width="60px;"/><br /><sub><a href="https://github.com/akramhany">akramhany</a></sub>](https://github.com/akramhany/)
+
+[<img src="https://github.com/g-magdy.png" width="60px;"/><br /><sub><a href="https://github.com/g-magdy">g-magdy</a></sub>](https://github.com/g-magdy/)
+
+[<img src="https://github.com/jpassica.png" width="60px;"/><br /><sub><a href="https://github.com/jpassica">jpassica</a></sub>](https://github.com/jpassica/)
+
+[<img src="https://github.com/Monwilliam.png" width="60px;"/><br /><sub><a href="https://github.com/Monwilliam">Monwilliam</a></sub>](https://github.com/Monwilliam/)
