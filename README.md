@@ -35,6 +35,7 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 
 ## Maintainers and Contributors
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove this section
 [<img src="https://github.com/amir-kedis.png" width="60px;"/><br /><sub><a href="https://github.com/amir-kedis">amir-kedis</a></sub>](https://github.com/amir-kedis/)
 
 [<img src="https://github.com/marwan2232004.png" width="60px;"/><br /><sub><a href="https://github.com/marwan2232004">marwan2232004</a></sub>](https://github.com/marwan2232004/)
@@ -54,3 +55,9 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 [<img src="https://github.com/jpassica.png" width="60px;"/><br /><sub><a href="https://github.com/jpassica">jpassica</a></sub>](https://github.com/jpassica/)
 
 [<img src="https://github.com/Monwilliam.png" width="60px;"/><br /><sub><a href="https://github.com/Monwilliam">Monwilliam</a></sub>](https://github.com/Monwilliam/)
+-->
+
+|        [<img src="https://github.com/amir-kedis.png" width="60px;"/><br /><sub>amir-kedis</sub>](https://github.com/amir-kedis/)         | [<img src="https://github.com/marwan2232004.png" width="60px;"/><br /><sub>marwan2232004</sub>](https://github.com/marwan2232004/) | [<img src="https://github.com/shehab299.png" width="60px;"/><br /><sub>shehab299</sub>](https://github.com/shehab299/) | [<img src="https://github.com/Ahmed-Aladdiin.png" width="60px;"/><br /><sub>Ahmed-Aladdiin</sub>](https://github.com/Ahmed-Aladdiin/) |
+| :--------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://github.com/AbdelruhmanSamy.png" width="60px;"/><br /><sub>AbdelruhmanSamy</sub>](https://github.com/AbdelruhmanSamy/) |  [<img src="https://github.com/Adham-hussin.png" width="60px;"/><br /><sub>Adham-hussin</sub>](https://github.com/Adham-hussin/)   | [<img src="https://github.com/akramhany.png" width="60px;"/><br /><sub>akramhany</sub>](https://github.com/akramhany/) |           [<img src="https://github.com/g-magdy.png" width="60px;"/><br /><sub>g-magdy</sub>](https://github.com/g-magdy/)            |
+|           [<img src="https://github.com/jpassica.png" width="60px;"/><br /><sub>jpassica</sub>](https://github.com/jpassica/)            |     [<img src="https://github.com/Monwilliam.png" width="60px;"/><br /><sub>Monwilliam</sub>](https://github.com/Monwilliam/)      |                                                                                                                        |                                                                                                                                       |
