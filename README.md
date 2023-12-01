@@ -35,4 +35,6 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 
 ## Maintainers and Contributors
 
+[<img src="https://github.com/amir-kedis.png" width="60px;"/><br /><sub><a href="https://github.com/amir-kedis">amir-kedis</a></sub>](https://github.com/amir-kedis/)
+
 [[TODO: ADD ALL OF US]]
