@@ -22,3 +22,10 @@ jz do_action2
  - read input from port 60H
  - check for the pressing of **up key**, and do action one
  - check for releasing of the **up key**, and do action two
+
+## Code Demo
+You will find attached, a code demo to test pressing the **up key** and the  **w key** at the same time.
+
+Pressing the **up key** will change the displayed _**n**_ into _**y**_ and releasing the key will do the opposite.
+
+While pressing the **w key** will change the displayed _**0**_ into _**1**_ and releasing the key will do the opposite.
