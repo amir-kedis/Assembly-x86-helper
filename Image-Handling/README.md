@@ -52,7 +52,6 @@ This Python script processes images based on a predefined color dictionary based
 
 Certainly! Below is a sample README file with documentation for your assembly code:
 
-```markdown
 # DOS Assembly Image Reader
 
 This DOS assembly program reads an image file (`a.bin`), processes its pixels, and displays the image on the screen using the 320x200 VGA graphics mode.
@@ -66,11 +65,6 @@ This DOS assembly program reads an image file (`a.bin`), processes its pixels, a
 ## Usage
 
 1. **Clone the Repository:**
-
-    ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
-    ```
 
 2. **Run the Assembly Program:**
 
@@ -86,14 +80,14 @@ This DOS assembly program reads an image file (`a.bin`), processes its pixels, a
 
 The program is written in DOS assembly language and performs the following tasks:
 
-- Opens the file `a.bin` and reads its contents into a buffer.
+- Opens the file `filename.bin` and reads its contents into a buffer.
 - Draws the image on the screen in VGA graphics mode (320x200).
 - Handles errors during file operations and displays an error message if needed.
 
 ## Constants
 
-- `IMAGE_HEIGHT`: Height of the image (120 pixels)
-- `IMAGE_WIDTH`: Width of the image (128 pixels)
+- `IMAGE_HEIGHT`: Height of the image 
+- `IMAGE_WIDTH`: Width of the image 
 - `SCREEN_WIDTH`: Width of the screen (320 pixels)
 - `SCREEN_HEIGHT`: Height of the screen (200 pixels)
 
@@ -113,8 +107,5 @@ In case of errors during file operations, an error message is displayed using DO
 
 The program exits when a key is pressed. The DOS interrupt 16h function 00h is used to wait for a key press.
 
-Feel free to modify this README to better suit your project and add any additional information that may be relevant.
-```
 
-Make sure to customize the README to fit the specifics of your project and provide any additional details that may be helpful for users or developers interacting with your code.
 
