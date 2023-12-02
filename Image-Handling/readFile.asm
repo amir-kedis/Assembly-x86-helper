@@ -7,14 +7,15 @@
 ;---------------------------------------
 .DATA
 
-filename db 'a.bin', 0
-buffer_size equ 128*120
+filename db 'filename.bin', 0
+buffer_size equ FILE_SIZE
 buffer db buffer_size dup(?)
 
-errtext db "Error", 10, "$"
+errtext db "YOUR ERROR MESSAGE", 10, "$"
 
-IMAGE_HEIGHT equ 120
-IMAGE_WIDTH equ 128
+IMAGE_HEIGHT equ ;YOUR HEIGHT
+IMAGE_WIDTH equ ;YOUR WIDTH
+
 SCREEN_WIDTH equ 320
 SCREEN_HEIGHT equ 200
 ;---------------------------------------
@@ -88,7 +89,7 @@ drawImage PROC
     REPEAT:
     MOV CX,IMAGE_WIDTH
     DRAW_PIXELS:
-        ; Check if the byte at [SI] is 0
+        ; Check if the byte at [SI] is 250 TO SKIP IT
         mov AH,BYTE PTR [SI]
         CMP BYTE PTR [SI], 250
         JE SKIP_DRAW
