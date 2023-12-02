@@ -1,12 +1,8 @@
-;!-----------------------------------------------------------------------------------
-;!-- ; THIS IS NOT TRUSTED BECARFULL WHEN USING THEM SPECIALY THE STRING  ;----------
-;!-----------------------------------------------------------------------------------
 
 .model small
 .stack 64
 .data
-mes db 'lw l8yt 7agh ghl6 ab8a 8wly ya bro$' 
-char db 'a'
+mes db 'lw l8yt 7agh wrong ab8a 8wly ya bro$' 
 .code 
 showmes macro str
     mov ah,09h
@@ -20,10 +16,11 @@ showchar macro str
     int 21h  
 endm showchar 
 
-main proc far  
+main proc   
 
 mov ax,@data
-mov ds,ax               
+mov ds,ax  
+
 
 ;--------------------------------MODE 13H-------------------------------------;
 mov ah,0          ;Change video mode (Graphical MODE)
@@ -31,10 +28,16 @@ mov al,13h        ;Max memory size 16KByte
                   ;AL:4 (320*200=64000 [2 bits for each pixel,4 colours])
                   ;AL:6 (640*200=128000[1 bit  for each pixel,2 colours B/W])
 int 10h
+;---------------------------------------Screen Coloring------------------------------------------------;
+    mov ax ,0600h
+    mov bh,09h
+    mov cx,0h
+    mov dx , 184fh
+    int 10h
 
 ;--------------------------Writing Character Number of times-------------------;
 mov ah,9          ;Display
-mov bh,0          ;!Page does not work here like normal so leave it 0 so that i work properly (noticed this by testing)
+mov bh,0          ;!Page does not work here like normal text mode so leave it 0 so that i work properly (noticed this by testing)
 mov al,44h        ;Letter D
 mov cx,5d        ;5 times
 mov bl,0Bh       ;?colors are diffrent from text mode 
@@ -70,16 +73,19 @@ mov dl,2
 mov dh,13 
 int 10h  
 
-showchar char ;!very important note if you  try but a character directly without putting in a variable it will not work 
-
+showchar 'a' 
 
 
 ;! if you chnage the mode to  6 or 4 the colors will change from above as will as the dimensions
 ;! you can follow the same pattern and test them
 
 
-                     
-hlt
+MOV    AH,0                   ; Waite for key press
+INT    16H
+
+MOV    AH,4CH
+INT    21H                    ;back to dos          
+        
 main endp 
 
 end main 
