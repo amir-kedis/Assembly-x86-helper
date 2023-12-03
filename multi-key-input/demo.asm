@@ -1,16 +1,27 @@
 ; A simple program to check for multiple key presses
 ; The program infinitly prints the values of flag1 and flag2
 
-
+include mac.inc
 .model small
 .stack 100h
 .data
+    msg1 db 'up key        w key', '$'
+    msg2 db 'Press the esc key to exit.', '$'
     flag1 db 'n'
     flag2 db '0'
-.code
-main proc
+.code 
+main proc far
     mov ax, @data ; set data segment
     mov ds, ax
+
+    mov ah, 0
+    mov al, 13h
+    int 10h
+    
+    moveCursor 0AH, 7H
+    showmes msg1
+    moveCursor 08H, 11H
+    showmes msg2
 
     readkey: ; label used for infinit loop
         
@@ -42,15 +53,25 @@ main proc
     not_release2:
 
     ; print the content of flag1 and flag2
+    moveCursor 0CH, 0AH
     mov ah, 2h
     mov dl, flag1
     int 21H
+
+    moveCursor 1AH, 0AH
     mov dl, flag2
     int 21H
 
     jmp readkey ; loop until the program is terminated
 
     kill:
+    ; clear the screen
+    mov ax ,0600h
+  	mov bh,0h
+  	mov cx,0h
+  	mov dx , 184fh
+  	int 10h
+
     mov ah, 4CH
     int 21H
 main endp
