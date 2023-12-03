@@ -34,6 +34,7 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 - [How to move a box in video mode with keyboard input](./moving-box-with-keyboard-input/README.md)
 - [How to write text on video mode](./writing-on-video-mode/README.md)
 - [Linking and using multiple files](./linking-multiple-files/README.md)
+- [Semi-automated compiling and running](./semi-automated-compiling/README.md)
 - [how to handle images](./Image-Handling/README.md)
 - [Reading Multiple key inputs](./multi-key-input/README.md)
 
