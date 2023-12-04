@@ -10,7 +10,10 @@ If you won't to try it temporarily, you can just use the `cycles` in dosbox by c
 
 1. Find the setting file for DOSBox in VSCodes settings.
 
-   - Find the vscode extention folder. (for me its `~/.vscode/extensions`)
+   - Find the vscode extension folder.
+      - Windows: C:\Users\YourUserName\ .vscode\extensions.
+      - macOS: ~/.vscode/extensions.
+      - Linux: ~/.vscode/extensions.
    - Locate the `vscode-dosbox` folder.
    - navigate to `emu/dosbox/dosbox-0.74.conf`.
    - (If you can't find the file, try to run the emulator once and it should appear.)
