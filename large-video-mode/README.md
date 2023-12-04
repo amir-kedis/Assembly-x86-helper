@@ -5,7 +5,7 @@ For List of SVGA modes see: [Wikipedia Link](https://en.wikipedia.org/wiki/VESA_
 
 An image for the mode (0101h 640x480x265) is shown below:
 
-[Large Screen Size](./large-mode.png)
+![Large Screen Size](./large-mode.png)
 
 ## How to use
 
