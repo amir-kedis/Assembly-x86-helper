@@ -35,6 +35,7 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 - [How to write text on video mode](./writing-on-video-mode/README.md)
 - [Linking and using multiple files](./linking-multiple-files/README.md)
 - [how to handle images](./Image-Handling/README.md)
+- [Calling a Procedure from an inc file](./reading-proc-from-inc-file/README.md)
 
 ## Maintainers and Contributors
 
