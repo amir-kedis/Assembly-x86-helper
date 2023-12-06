@@ -37,6 +37,7 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 - [Linking and using multiple files](./linking-multiple-files/README.md)
 - [Semi-automated compiling and running](./semi-automated-compiling/README.md)
 - [how to handle images](./Image-Handling/README.md)
+- [Calling a Procedure from an inc file](./reading-proc-from-inc-file/README.md)
 - [Reading Multiple key inputs](./multi-key-input/README.md)
 - [Adjusting settings of dosbox - increase speed](./adjusting-the-speed-of-dosbox-in-vscode/README.md)
 
