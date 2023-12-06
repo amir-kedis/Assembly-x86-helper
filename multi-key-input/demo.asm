@@ -1,7 +1,6 @@
 ; A simple program to check for multiple key presses
 ; The program infinitly prints the values of flag1 and flag2
-
-include mac.inc
+.286
 .model small
 .stack 100h
 .data
@@ -9,28 +8,18 @@ include mac.inc
     msg2 db 'Press the esc key to exit.', '$'
     flag1 db 'n'
     flag2 db '0'
+      dt 0
+    killSignal db 0
+      dw 0
+    origInt9Offset dw 0
+    origInt9Segment dw 0
+      db ?
 .code 
-main proc far
-    mov ax, @data ; set data segment
-    mov ds, ax
+include mac.inc
 
-    mov ah, 0
-    mov al, 13h
-    int 10h
-    
-    moveCursor 0AH, 7H
-    showmes msg1
-    moveCursor 08H, 11H
-    showmes msg2
-
-    readkey: ; label used for infinit loop
-        
-    ; al hold the scan code of the pressed or released key
+overRide9H PROC
+		; al hold the scan code of the pressed or released key
     in al, 60h ; read scan code
-
-    ; end the program when pressing the esc key
-    cmp al, 1h
-    jz kill
 
     ; check for the up arrow key
     cmp al, 48h       ; the scan code for pressing the up arrow key
@@ -50,7 +39,58 @@ main proc far
     cmp al, 11h + 80h ; the scan code for releassing the w key
     jnz not_release2
     mov flag2, '0'
-    not_release2:
+    not_release2:	          ; Call DOS interrupt to exit
+
+    cmp al, 1h
+    jnz dontkill
+    mov killSignal, 0fh
+
+    dontkill:
+		mov  al, 20h           ; The non specific EOI (End Of Interrupt)
+    out  20h, al
+    iret
+overRide9H endp 
+
+main proc far
+    mov ax, @data ; set data segment
+    mov ds, ax
+
+    ; ---------------------------------------override int 9h----------------------------------------------;
+
+    ; Disable interrupts
+    CLI
+    ; Save the original interrupt vector for int 9h
+    pusha
+    mov ax, 3509h
+    int 21h
+    mov origInt9Offset, bx
+    mov origInt9Segment, es
+    popa
+
+		push ds
+		mov ax, cs
+		mov ds, ax
+    ; Change the interrupt vector for int 9h
+    mov ax, 2509h
+		lea dx, overRide9H
+		int 21h
+    ; Re-enable interrupts
+		pop ds
+    STI
+
+    ; -------------------------------------- Graphics Mode ----------------------------------------------------;
+    mov ah, 0
+    mov al, 13h
+    int 10h
+    
+    moveCursor 0AH, 7H
+    showmes msg1
+    moveCursor 08H, 11H
+    showmes msg2
+
+
+    ;---------------------------------------------------infinit loop-----------------------------------------------;
+    readkey: ; label used for infinit loop
 
     ; print the content of flag1 and flag2
     moveCursor 0CH, 0AH
@@ -61,6 +101,10 @@ main proc far
     moveCursor 1AH, 0AH
     mov dl, flag2
     int 21H
+    
+    mov al, killSignal
+    cmp al, 0
+    jnz kill 
 
     jmp readkey ; loop until the program is terminated
 
@@ -72,6 +116,20 @@ main proc far
   	mov dx , 184fh
   	int 10h
 
+    ;--------------------------------------------------Restore the original interrupt vector for int 9h----------------------------;
+    CLI
+    mov ax, origInt9Segment
+    mov dx, origInt9Offset
+    
+    push ds
+    mov ds, ax
+
+    mov ax, 2509h
+    int 21h
+    ; Re-enable interrupts
+    pop ds
+    STI
+    ;----------------------------------------------------terminate---------------------------------------------------------------;
     mov ah, 4CH
     int 21H
 main endp
