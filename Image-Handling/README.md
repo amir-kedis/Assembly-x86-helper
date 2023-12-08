@@ -49,9 +49,6 @@ This Python script processes images based on a predefined color dictionary based
   - Provides an option to resize the image.
   - Enter the factor by which you want to reduce the image size.
 
-
-Certainly! Below is a sample README file with documentation for your assembly code:
-
 # DOS Assembly Image Reader
 
 This DOS assembly program reads an image file (`a.bin`), processes its pixels, and displays the image on the screen using the 320x200 VGA graphics mode.
