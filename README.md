@@ -9,6 +9,7 @@ Assembly x86 Helper repository, a collaborative initiative by students from Cair
   - [What's Inside?](#whats-inside)
   - [How to get started?](#how-to-get-started)
   - [Folders Links](#folders-links)
+  - [Useful Resources](#useful-resources)
   - [Maintainers and Contributors](#maintainers-and-contributors)
 
 ## What's Inside?
@@ -40,6 +41,13 @@ git clone https://github.com/amir-kedis/Assembly-x86-helper.git
 - [Calling a Procedure from an inc file](./reading-proc-from-inc-file/README.md)
 - [Reading Multiple key inputs](./multi-key-input/README.md)
 - [Adjusting settings of dosbox - increase speed](./adjusting-the-speed-of-dosbox-in-vscode/README.md)
+
+## Useful Resources
+
+- [List of All Interrupts](https://www.ctyme.com/intr/int.htm)
+- [List of keyboard scan codes](https://www.millisecond.com/support/docs/current/html/language/scancodes.htm)
+- [VGA 265 color palette](https://www.fountainware.com/EXPL/vga_color_palettes.htm)
+- [Pixel art Tool (LibreSprite)](https://libresprite.github.io/#!/)
 
 ## Maintainers and Contributors
 
