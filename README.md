@@ -1,6 +1,6 @@
 # 🚀 Assembly-x86-helper
 
-Assembly x86 Helper repository, a collaborative initiative by students from Cairo University's Faculty of Engineering CMP26 to make a comprehensive resource hub for teams and individuals delving into the world of low-level x86 programming, with a specific focus on game development.
+We Learned how to make games with ASM 86x, had great fun with it, and want to share what we learned with you, to ease your process. 😉
 
 ## Table of Contents
 
